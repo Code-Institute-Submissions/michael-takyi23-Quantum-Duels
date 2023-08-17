@@ -1,34 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    /
-    <link rel="stylesheet" href="./sets/css/style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awesome and google fonts-->
+    <script src="https://kit.fontawesome.com/95a43c4ec4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Roboto+Condensed&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
     <!-- Title-->
     <title>Quantum Duels RPSLS</title>
     <!-- Favicon-->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/favicon_io/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/favicon_io/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/favicon_io/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./assets/favicon_io/site.webmanifest" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
   </head>
   <body>
-    <script src="./assets/js/script.js"></script>
-  </body>
-</html>
+
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1 id="logo">Quantum Duels <span id="RPSLS">RPSLS</span></h1>
+            <p>Welcome to the battle realm, outsmart your quantum opponent</p>
+        </header>
+    
+        <!-- Rules Section -->
+        <section class="rules">
+            <h2>Game Rules</h2>
+            <p>
+                Quantum Duels follows the rules of Rock, Paper, Scissors, Lizard, Spock with a quantum twist: </p>
+            <ul>
+                <li>Quantum Rock crushes Superposition Scissors and Entangled Lizard</li>
+                <li>Photon Paper covers Quantum Rock and disproves Spock Wave-Function</li>
+                <li>Superposition Scissors cuts Photon Paper and decapitates Entangled Lizard</li>
+                <li>Entangled Lizard eats Photon Paper and poisons Spock Wave-Function</li>
+                <li>Spock Wave-Function smashes Superposition Scissors and vaporizes Quantum Rock</li>
+            </ul>
+            <strong>Let the Battle begin</strong>
+        </section>
+
+        <!-- main game area-->
+
+        <main>
+        <section class="quantum-choices">
+            <h2>Quantum Choices</h2>
+            <button onclick="playGame('quantumRock')" aria-label="Choose Quantum Rock">Quantum Rock</button>
+            <button onclick="playGame('photonPaper')" aria-label="Choose Photon Paper">Photon Paper</button>
+            <button onclick="playGame('superpositionScissors')" aria-label="Choose Superposition Scissors">Superposition
+                Scissors</button>
+            <button onclick="playGame('entangledLizard')" aria-label="Choose Entangled Lizard">Entangled Lizard</button>
+            <button onclick="playGame('spockWaveFunction')" aria-label="Choose Spock Wave-Function">Spock
+                Wave-Function</button>
+        </section>
+        </main>
+    </div>
+    
+    <script src="assets/js/script.js"></script>
+    
+    </body>
