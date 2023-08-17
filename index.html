@@ -21,13 +21,14 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
   </head>
+
   <body>
 
     <div class="container">
         <!-- Header Section -->
         <header>
             <h1 id="logo">Quantum Duels <span id="RPSLS">RPSLS</span></h1>
-            <p>Welcome to the battle realm, outsmart your quantum opponent</p>
+            <p>Welcome to the battle realm, outsmart your quantum opponent!</p>
         </header>
     
         <!-- Rules Section -->
@@ -49,6 +50,9 @@
 
         <main>
         <section class="quantum-choices">
+
+            <div>
+
             <h2>Quantum Choices</h2>
             <button onclick="playGame('quantumRock')" aria-label="Choose Quantum Rock">Quantum Rock</button>
             <button onclick="playGame('photonPaper')" aria-label="Choose Photon Paper">Photon Paper</button>
@@ -57,7 +61,31 @@
             <button onclick="playGame('entangledLizard')" aria-label="Choose Entangled Lizard">Entangled Lizard</button>
             <button onclick="playGame('spockWaveFunction')" aria-label="Choose Spock Wave-Function">Spock
                 Wave-Function</button>
+
+            </div>
         </section>
+
+        <section class="duel-results">
+
+            <div class="choice-display">
+                <h3 id="playerChoice"><strong>Your Quantum Choice:</strong></h3>
+                <img id="playerChoiceImage" src="assets/images/rpsls.png" alt="Player's choice">
+            </div>
+            <div class="choice-display">
+                <h3 id="ComputerChoice"><strong>Opponent's Quantum State:</strong></h3>
+                <img id="computerChoiceImage" src="assets/images/rpsls.png" alt="Computer's choice">
+            </div>
+            <p><strong>Duel Outcome:</strong> <span id="duelOutcome"></span></p>
+
+           
+        </section>
+
+        <!-- Quantum Scoreboard Area -->
+        <footer class="quantum-scoreboard">
+            <p><strong>Quantum Points:</strong> <span id="quantumPoints">0</span></p>
+            <p><strong>Duel Rounds Remaining:</strong> <span id="duelRounds">3</span></p>
+        </footer>
+
         </main>
     </div>
     
