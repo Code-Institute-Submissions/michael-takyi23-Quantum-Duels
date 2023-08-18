@@ -27,6 +27,7 @@ header {
     font-family: 'Roboto Condensed', sans-serif;
     color: yellow;
     font-size: 40px;
+    letter-spacing: 2px;
 }
 
 #RPSLS {
@@ -39,11 +40,22 @@ header {
     margin-bottom: 20px;
 }
 
-#rules h2, p, ul {
+#rules p, ul {
     color: #e7e7e7;
 }
 
+#rules h2, strong {
+    color: yellow;
+}
+
+.begin {
+    text-align: center center;
+    font-size: 25px;
+    margin-left: 30%;
+}
+
 .quantum-choices h2 {
+    color: yellow;
     font-size: 24px;
     margin-bottom: 20px;
     font-weight: 400;
