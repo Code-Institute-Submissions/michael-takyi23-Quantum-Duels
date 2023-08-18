@@ -33,6 +33,7 @@ header {
 header p {
     color: aqua;
     font-size: 15px;
+    letter-spacing: 1px;
 }
 
 #RPSLS {
@@ -47,6 +48,7 @@ header p {
 
 #rules p, ul {
     color: #e7e7e7;
+    letter-spacing: 1px;
 }
 
 #rules h2, strong {
@@ -93,6 +95,10 @@ header p {
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 20px;
+}
+
+#duel-results p {
+    font-size: 20px;
 }
 
 .choice-display {
