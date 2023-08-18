@@ -2,7 +2,7 @@ body {
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('images/background-image.png');
+    background-image: url('../images/background-image.png');
     background-repeat: no-repeat;
     background-attachment: fixed;  
     background-size: cover;  
@@ -10,9 +10,9 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
-    background-color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -25,21 +25,25 @@ header {
 
 #logo {
     font-family: 'Roboto Condensed', sans-serif;
-    color: #333;
-    font-size: 28px;
+    color: yellow;
+    font-size: 40px;
 }
 
 #RPSLS {
     color: #4a90e2;
 }
 
-.rules, .quantum-choices, .duel-results {
+#rules, .quantum-choices, #duel-results {
     border-bottom: 1px solid #e7e7e7;
     padding-bottom: 20px;
     margin-bottom: 20px;
 }
 
-.rules h2, .quantum-choices h2 {
+#rules h2, p, ul {
+    color: #e7e7e7;
+}
+
+.quantum-choices h2 {
     font-size: 24px;
     margin-bottom: 20px;
     font-weight: 400;
@@ -58,11 +62,12 @@ header {
     transition: background-color 0.3s;
 }
 
+
 .quantum-choices button:hover {
     background-color: #357ab7;
 }
 
-.duel-results {
+#duel-results {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -73,10 +78,11 @@ header {
     flex-basis: 48%;
     text-align: center;
     margin-bottom: 20px;
+    color: yellow;
 }
 
 .choice-display img {
-    width: 100px;
+    width: 300px;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin: 10px 0;
@@ -84,6 +90,7 @@ header {
 
 .quantum-scoreboard {
     text-align: center;
+    color: #e7e7e7;
 }
 
 .quantum-scoreboard p {
