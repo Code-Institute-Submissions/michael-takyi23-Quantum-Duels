@@ -35,6 +35,7 @@ function playGame(choice) {
     }
 }
 
+
 function updatePlayerHistory(choice) {
     playerHistory[choice]++;
 }
@@ -49,7 +50,11 @@ function makeAdaptiveComputerChoice() {
         }
     }
 
-    return counterMove(prediction);
+    if (Math.random() > 0.7) {
+        return counterMove(prediction);
+    } else {
+        return choices[Math.floor(Math.random() * choices.length)];
+    }
 }
 
 function counterMove(prediction) {
