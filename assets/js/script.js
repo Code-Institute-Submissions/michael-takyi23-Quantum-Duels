@@ -87,3 +87,25 @@ function counterMove(prediction) {
     }
 }
 
+function determineWinner(playerChoice, computerChoice) {
+    let outcomeElement = document.getElementById('duelOutcome');
+
+    if (playerChoice === computerChoice) {
+        outcomeElement.style.color = "yellow"; 
+        return 'Quantum Stalemate!';
+    }
+    if ((playerChoice === 'quantumRock' && (computerChoice === 'superpositionScissors' || computerChoice === 'entangledLizard')) ||
+        (playerChoice === 'photonPaper' && (computerChoice === 'quantumRock' || computerChoice === 'spockWaveFunction')) ||
+        (playerChoice === 'superpositionScissors' && (computerChoice === 'photonPaper' || computerChoice === 'entangledLizard')) ||
+        (playerChoice === 'entangledLizard' && (computerChoice === 'spockWaveFunction' || computerChoice === 'photonPaper')) ||
+        (playerChoice === 'spockWaveFunction' && (computerChoice === 'quantumRock' || computerChoice === 'superpositionScissors'))) {
+        
+        outcomeElement.style.color = "lime";
+        return 'You Prevailed!';
+    }
+
+    outcomeElement.style.color = "red";
+    return 'Quantum Defeat!';
+}
+
+
