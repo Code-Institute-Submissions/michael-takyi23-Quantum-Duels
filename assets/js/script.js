@@ -46,3 +46,20 @@ function playGame(choice) {
         resetGame();
     }
 }
+
+function updatePlayerHistory(choice) {
+    playerHistory[choice]++;
+}
+
+function makeAdaptiveComputerChoice() {
+    const choices = Object.keys(playerHistory);
+    let prediction = choices[0];
+
+    for (let i = 1; i < choices.length; i++) {
+        if (playerHistory[choices[i]] > playerHistory[prediction]) {
+            prediction = choices[i];
+        }
+    }
+
+    return counterMove(prediction);
+}
