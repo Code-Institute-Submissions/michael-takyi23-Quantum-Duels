@@ -7,3 +7,4 @@ let playerHistory = {
     entangledLizard: 0,
     spockWaveFunction: 0
 };
+
