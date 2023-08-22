@@ -90,6 +90,10 @@ header p {
     background-color: #357ab7;
 }
 
+.quantum-choices button:active {
+    background-color: #2a5a8f;
+}
+
 #duel-results {
     display: flex;
     justify-content: space-between;
