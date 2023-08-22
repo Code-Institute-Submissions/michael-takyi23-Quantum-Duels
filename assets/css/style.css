@@ -21,6 +21,7 @@ body {
 header {
     text-align: center;
     margin-bottom: 30px;
+    background-color: black;
 }
 
 #logo {
@@ -49,6 +50,7 @@ header p {
 #rules p, ul {
     color: #e7e7e7;
     letter-spacing: 1px;
+    margin-left: 26px;
 }
 
 #rules h2, strong {
@@ -56,13 +58,14 @@ header p {
 }
 
 #rules h2 {
-    font-size: 30px;
+    font-size: 25px;
+    text-align: center;
 }
 
 .begin {
     text-align: center;
     font-size: 20px;
-    margin-left: 33%;
+    margin-left: 40%;
 }
 
 .quantum-choices h2 {
@@ -94,6 +97,19 @@ header p {
     background-color: #2a5a8f;
 }
 
+/* bounce animation for duel results and scoreboard area*/
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
 #duel-results {
     display: flex;
     justify-content: space-between;
@@ -122,11 +138,14 @@ header p {
 .quantum-scoreboard {
     text-align: center;
     color: #e7e7e7;
+
+    animation: bounce 0.8s infinite;
 }
 
 .quantum-scoreboard p {
     font-size: 20px;
 }
+/* media query for screens 600px and down*/
 
 @media (max-width: 600px) {
     .choice-display {
