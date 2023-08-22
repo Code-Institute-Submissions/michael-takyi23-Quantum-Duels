@@ -29,8 +29,8 @@ function playGame(choice) {
     document.getElementById('ComputerChoice').textContent = "Opponent's Choice: " + computerChoice;
     document.getElementById('duelOutcome').textContent = result;
 
-    document.getElementById('playerChoiceImage').src = `assets/images/${choice}.png`;
-    document.getElementById('computerChoiceImage').src = `assets/images/${computerChoice}.png`;
+    document.getElementById('playerChoiceImage').src = `assets/images/${choice}.jpg`;
+    document.getElementById('computerChoiceImage').src = `assets/images/${computerChoice}.jpg`;
 
     if (result === 'You Prevailed!') {
         score++;
@@ -61,5 +61,29 @@ function makeAdaptiveComputerChoice() {
         }
     }
 
-    return counterMove(prediction);
+    // Introduce unpredictability: 30% chance to use adaptive choice, 70% chance to make a random choice.
+    if (Math.random() > 0.7) {
+        return counterMove(prediction);
+    } else {
+        return choices[Math.floor(Math.random() * choices.length)];
+    }
 }
+
+function counterMove(prediction) {
+    switch (prediction) {
+        case 'quantumRock':
+            return 'photonPaper';
+        case 'photonPaper':
+            return 'superpositionScissors';
+        case 'superpositionScissors':
+            return 'entangledLizard';
+        case 'entangledLizard':
+            return 'quantumRock';
+        case 'spockWaveFunction':
+            return 'photonPaper';
+        default:
+            const choices = ['quantumRock', 'photonPaper', 'superpositionScissors', 'entangledLizard', 'spockWaveFunction'];
+            return choices[Math.floor(Math.random() * choices.length)];
+    }
+}
+
