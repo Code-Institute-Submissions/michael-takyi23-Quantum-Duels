@@ -108,4 +108,24 @@ function determineWinner(playerChoice, computerChoice) {
     return 'Quantum Defeat!';
 }
 
+function resetGame() {
+    score = 0;
+    rounds = 3;
+    playerHistory = {
+        quantumRock: 0,
+        photonPaper: 0,
+        superpositionScissors: 0,
+        entangledLizard: 0,
+        spockWaveFunction: 0
+    };
+    document.getElementById('quantumPoints').textContent = score;
+    document.getElementById('duelRounds').textContent = rounds;
+    document.getElementById('playerChoice').textContent = '';
+    document.getElementById('ComputerChoice').textContent = '';
+    document.getElementById('duelOutcome').textContent = '';
+    document.getElementById('playerChoiceImage').src = 'assets/images/rpsls.png';
+    document.getElementById('computerChoiceImage').src = 'assets/images/rpsls.png';
+}
+
+
 
