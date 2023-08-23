@@ -37,8 +37,21 @@ header p {
     letter-spacing: 1px;
 }
 
+/* Keyframes for the breathing effect */
+@keyframes breathe {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 2;
+    }
+    50% {
+        transform: scale(1.4);
+        opacity: 0.6;
+    }
+}
+
 #RPSLS {
     color: red;
+    animation: breathe 1s infinite; 
 }
 
 #rules, .quantum-choices, #duel-results {
