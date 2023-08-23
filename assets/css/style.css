@@ -12,7 +12,7 @@ body {
 .container {
     max-width: 900px;
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -51,7 +51,8 @@ header p {
 
 #RPSLS {
     color: red;
-    animation: breathe 1s infinite; 
+    
+    animation: breathe 2s infinite; 
 }
 
 #rules, .quantum-choices, #duel-results {
@@ -79,6 +80,8 @@ header p {
     text-align: center;
     font-size: 20px;
     margin-left: 40%;
+
+    animation: breathe 2s infinite;  
 
 }
 
