@@ -129,9 +129,9 @@ header p {
 }
 
 .choice-display img {
-    width: 400px;
+    width: 250px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 10px 0;
 }
 
@@ -150,5 +150,13 @@ header p {
 @media (max-width: 600px) {
     .choice-display {
         flex-basis: 100%;
+    }
+
+    .begin {
+        margin-left: 35px;
+    }
+
+    #rules p, ul {
+        margin-left: auto;
     }
 }
