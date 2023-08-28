@@ -1,39 +1,76 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Quantum Duels RPSLS
 
-Welcome,
+Welcome to Quantum Duels, a modern take on the classic Rock, Paper, Scissors game with a quantum twist!
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![screenshot of the webpage responsiveness](assets/images/gold-coasts-mockup.png)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **July 26th, 2023**
+## Purpose
 
-## Codeanywhere Reminders
+The goal of the site is to provide a reliable source of information pertaining to the history of Dr. Kwame Nkrumah.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+## UX Design
 
-`python3 -m http.server`
+### User stories
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+**As a first time user**
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+- I want to easily understand the main purpose of the site and learn more about the topic.
+- I am interested in the historical facts surrounding the person.
+- I want to be able to easily navigate and find content.
 
-`http_server`
+**All users want to be able to access and comfortably view the website on mobile devices**
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+# Description
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+Quantum Duels follows the rules of Rock, Paper, Scissors, Lizard, Spock but with a quantum twist! Test your skills and strategy against a quantum opponent.
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## Features
 
-To log into the Heroku toolbelt CLI:
+## Features Left to Implement
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- In the future I want to implement the hamburger drop down menu for smaller devices to enable easy accessibility to save enough space on screens.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## Technologies used
 
----
+### Validator Testing
 
-Happy coding!
+- HTML: No errors were returned when passing through the official [W3C validator](https://validator.w3.org/).
+- CSS: No errors were returned when passing through the official ( Jigsaw ) validator.
+- Accessibility: I confirmed that the colors and fonts chosen are easy to read and accessible by running it through lighthouse in devtools.
+
+![accessibility score](assets/images/lighthouse.png)
+
+### Bugs
+
+- I realised that when I scroll to the right on mobile devices, there is white space on the right side of the page especially the header which i have tried to adjust but the problem persisted.
+- I realised I had added width to the footer and a margin of 1em to the header element.
+- removing the width of the footer and the margin of 1em from the header for screens 768px and 468px solved fixed the problem.
+
+## Deployment
+
+This website was deployed to Github pages. The steps to deploy are as follows:
+
+- In the GitHub repository, navigate to the Settings tab
+- Find pages then click on pages and find Build and Deployment
+- From the source section drop-down menu, select the Main Branch
+- Once the main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+The website can be accessed from the following link - [https://michael-takyi23.github.io/Gold-Coasts-Kwame-Nkrumah/](<https://michael-takyi23.github.io/Gold-Coasts-Kwame-Nkrumah/>)
+
+## Credits
+
+### Contents
+
+Information for the content of the page was sourced from the following websites :
+
+- [Wikipedia](https://en.wikipedia.org/wiki/Kwame_Nkrumah#Ghanaian_independence)
+- [Britannica](https://www.britannica.com/biography/Kwame-Nkrumah)
+- [Youtube Documentary](https://youtu.be/TMY0iTcspNA)
+- The icons used on the site were sourced from [Font Awesome](https://fontawesome.com/).
+
+- The code I used for the header and the early life sections and the hero outer and cover text was sourced from CI Love Running project.
+
+### Media
+
+- The hero image was sourced from [https://annenberg.usc.edu/news/spotlight/they-dont-tell-us-about-nkrumah](https://annenberg.usc.edu/news/spotlight/they-dont-tell-us-about-nkrumah)
+- images for the gallery was sources from [Wikipedia](https://en.wikipedia.org/wiki/Kwame_Nkrumah#Ghanaian_independence)
