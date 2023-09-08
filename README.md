@@ -30,7 +30,9 @@ Quantum Duels follows the rules of Rock, Paper, Scissors, Lizard, Spock but with
 
 ## Features Left to Implement
 
-- In the future I want to implement the hamburger drop down menu for smaller devices to enable easy accessibility to save enough space on screens.
+- Add sound effects for each quantum choice when clicked on.
+- Implement a multiplayer mode for online battles.
+- Leaderboard system to rank players based on their scores.
 
 ## Technologies used
 
