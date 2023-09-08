@@ -9,7 +9,7 @@ let playerHistory = {
     spockWaveFunction: 0
 };
 
-// adding event listener to all buttons
+// Adding event listener to all buttons
 document.addEventListener("DOMContentLoaded", function() {
     const buttons = document.querySelectorAll(".data-choice");
 
@@ -51,6 +51,7 @@ function updatePlayerHistory(choice) {
     playerHistory[choice]++;
 }
 
+// This makes the computer Adapt to the players choices and predict to counter Move:
 function makeAdaptiveComputerChoice() {
     const choices = Object.keys(playerHistory);
     let prediction = choices[0];
@@ -61,7 +62,7 @@ function makeAdaptiveComputerChoice() {
         }
     }
 
-    // Introduce unpredictability: 30% chance to use adaptive choice, 70% chance to make a random choice.
+    // Introduced unpredictability: 30% chance to use adaptive choice, 70% chance to make a random choice.
     if (Math.random() > 0.7) {
         return counterMove(prediction);
     } else {
@@ -87,6 +88,7 @@ function counterMove(prediction) {
     }
 }
 
+// defining the outcome of the game
 function determineWinner(playerChoice, computerChoice) {
     let outcomeElement = document.getElementById('duelOutcome');
 
@@ -108,6 +110,7 @@ function determineWinner(playerChoice, computerChoice) {
     return 'Quantum Defeat!';
 }
 
+// Resets Game when player runs out of rounds...
 function resetGame() {
     score = 0;
     rounds = 3;

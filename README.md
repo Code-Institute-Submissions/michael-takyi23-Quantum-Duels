@@ -6,23 +6,25 @@ Welcome to Quantum Duels, a modern take on the classic Rock, Paper, Scissors gam
 
 ## Purpose
 
-The goal of the site is to provide a reliable source of information pertaining to the history of Dr. Kwame Nkrumah.
+The goal of the site is to provide the user with an interactive classic game.
 
 ## UX Design
 
 ### User stories
 
-**As a first time user**
+**As a user**
 
-- I want to easily understand the main purpose of the site and learn more about the topic.
-- I am interested in the historical facts surrounding the person.
-- I want to be able to easily navigate and find content.
+- I want to easily understand the rules of the game.
+- I am interested in knowing my scores and rounds I have left.
+- I want to be able to easily interact with the game choices when I click on the choices available.
+- I want to be able to see my score and progress during the gameplay.
+- I want to be able to play the game again when I run out of rounds and the game ends.
 
 **All users want to be able to access and comfortably view the website on mobile devices**
 
 # Description
 
-Quantum Duels follows the rules of Rock, Paper, Scissors, Lizard, Spock but with a quantum twist! Test your skills and strategy against a quantum opponent.
+Quantum Duels follows the rules of Rock, Paper, Scissors, Lizard, Spock but with a quantum twist! Which gives the users to test their skills and strategies against a quantum opponent (A.I).
 
 ## Features
 
