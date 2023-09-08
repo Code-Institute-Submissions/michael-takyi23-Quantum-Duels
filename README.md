@@ -40,6 +40,7 @@ Quantum Duels follows the rules of Rock, Paper, Scissors, Lizard, Spock but with
 
 - HTML: No errors were returned when passing through the official [W3C validator](https://validator.w3.org/).
 - CSS: No errors were returned when passing through the official ( Jigsaw ) validator.
+- JS: No errors were returned when passing through the official [Jshint](https://jshint.com/) validator.
 - Accessibility: I confirmed that the colors and fonts chosen are easy to read and accessible by running it through lighthouse in devtools.
 
 ![accessibility score](assets/images/lighthouse.png)
@@ -66,6 +67,8 @@ The website can be accessed from the following link - []()
 
 - The icons used on the site were sourced from [Font Awesome](https://fontawesome.com/).
 - The fonts for the webpage was sourced from [Google fonts](https://fonts.google.com/).
+- The images for the player and computer choice was sourced from [Akshaybahadur](https://www.akshaybahadur.com/post/rock-paper-scissors-lizard-spock).
+- The background image was sourced from [Google](https://google.com/).
 
 
 ### Media
