@@ -46,9 +46,8 @@ Quantum Duels follows the rules of Rock, Paper, Scissors, Lizard, Spock but with
 
 ### Bugs
 
-- I realised that when I scroll to the right on mobile devices, there is white space on the right side of the page especially the header which i have tried to adjust but the problem persisted.
-- I realised I had added width to the footer and a margin of 1em to the header element.
-- removing the width of the footer and the margin of 1em from the header for screens 768px and 468px solved fixed the problem.
+- Upon testing the website and playing the gameit came to my notice that user could continue playing the game and winning without running out of rounds just selecting the Superposition Scissors choice. The computer could not counter the move regardless the number of times the user selects the Superposition Scissors. Which made the game pretty boring to the user. I figured it was how i wrote the code for the function makeAdaptiveComputerChoice
+- By introducing unpredictability: 30% chance to use adaptive choice and 70% chance to make a random choice. By using the Math.random() method, to return the counterMove() in the makeAdaptiveComputerChoice the bug was fixed and the computer could counter the users choices, making the game more competetive and interesting to the user.
 
 ## Deployment
 
@@ -59,20 +58,15 @@ This website was deployed to Github pages. The steps to deploy are as follows:
 - From the source section drop-down menu, select the Main Branch
 - Once the main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-The website can be accessed from the following link - [https://michael-takyi23.github.io/Gold-Coasts-Kwame-Nkrumah/](<https://michael-takyi23.github.io/Gold-Coasts-Kwame-Nkrumah/>)
+The website can be accessed from the following link - []()
 
 ## Credits
 
 ### Contents
 
-Information for the content of the page was sourced from the following websites :
-
-- [Wikipedia](https://en.wikipedia.org/wiki/Kwame_Nkrumah#Ghanaian_independence)
-- [Britannica](https://www.britannica.com/biography/Kwame-Nkrumah)
-- [Youtube Documentary](https://youtu.be/TMY0iTcspNA)
 - The icons used on the site were sourced from [Font Awesome](https://fontawesome.com/).
+- The fonts for the webpage was sourced from [Google fonts](https://fonts.google.com/).
 
-- The code I used for the header and the early life sections and the hero outer and cover text was sourced from CI Love Running project.
 
 ### Media
 
