@@ -42,7 +42,7 @@ function playGame(choice) {
     document.getElementById('duelRounds').textContent = rounds;
 
     if (rounds === 0) {
-        alert('Quantum Duel Ends! Your quantum points are: ' + score);
+        alert('Quantum Duel Ends! Try again! Your quantum points are: ' + score);
         resetGame();
     }
 }
