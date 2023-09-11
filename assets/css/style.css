@@ -119,6 +119,8 @@ strong {
     margin-bottom: 25px;
     margin-left: 30%;
     font-weight: 400;
+
+    animation: breathe 2s infinite;
 }
 
 .quantum-choices button {

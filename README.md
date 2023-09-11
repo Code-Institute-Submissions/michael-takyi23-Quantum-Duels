@@ -67,11 +67,9 @@ The website can be accessed from the following link - []()
 
 - The icons used on the site were sourced from [Font Awesome](https://fontawesome.com/).
 - The fonts for the webpage was sourced from [Google fonts](https://fonts.google.com/).
-- The images for the player and computer choice was sourced from [Akshaybahadur](https://www.akshaybahadur.com/post/rock-paper-scissors-lizard-spock).
-- The background image was sourced from [Google](https://google.com/).
-
 
 ### Media
 
-- The hero image was sourced from [https://annenberg.usc.edu/news/spotlight/they-dont-tell-us-about-nkrumah](https://annenberg.usc.edu/news/spotlight/they-dont-tell-us-about-nkrumah)
-- images for the gallery was sources from [Wikipedia](https://en.wikipedia.org/wiki/Kwame_Nkrumah#Ghanaian_independence)
+- The images for the player and computer choice was sourced from [Akshaybahadur](https://www.akshaybahadur.com/post/rock-paper-scissors-lizard-spock).
+- The background image was sourced from [Google](https://google.com/).
+
