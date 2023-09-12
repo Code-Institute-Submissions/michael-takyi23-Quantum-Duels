@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
 // Defining the main game functions
 function playGame(choice) {
     updatePlayerHistory(choice);
@@ -83,7 +84,7 @@ function counterMove(prediction) {
         case 'spockWaveFunction':
             return 'photonPaper';
         default:
-            const choices = ['quantumRock', 'photonPaper', 'superpositionScissors', 'entangledLizard', 'spockWaveFunction'];
+            let choices = ['quantumRock', 'photonPaper', 'superpositionScissors', 'entangledLizard', 'spockWaveFunction'];
             return choices[Math.floor(Math.random() * choices.length)];
     }
 }

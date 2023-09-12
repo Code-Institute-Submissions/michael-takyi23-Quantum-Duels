@@ -1,3 +1,4 @@
+
 body {
     font-family: 'Lato', sans-serif;
     margin: 0;
@@ -62,7 +63,8 @@ header p {
     max-width: 800px;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.4);
-    padding: 15px;
+    padding-bottom: 1em;
+    margin-top: auto;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -96,29 +98,18 @@ strong {
     font-size: 25px;
     text-align: center;
     color: red;
-
-    animation: breathe 2s infinite;
 }
 
 #rules i {
     margin-left: 50%;
 }
 
-.begin {
-    text-align: center;
-    font-size: 20px;
-    margin-left: 40%;
-
-    animation: breathe 2s infinite;
-
-}
-
 .quantum-choices h2 {
     color: yellow;
-    font-size: 35px;
+    font-size: 30px;
     margin-bottom: 25px;
     margin-left: 30%;
-    font-weight: 400;
+    font-weight: 500;
 
     animation: breathe 2s infinite;
 }
@@ -126,7 +117,7 @@ strong {
 .quantum-choices button {
     display: block;
     width: 80%;
-    padding: 10px 15px;
+    padding: 10px 15px 10px;
     margin: 10px 70px;
     background-color: aqua;
     color: black;
@@ -136,6 +127,11 @@ strong {
     transition: background-color 0.3s;
 }
 
+#quantumRock, #photonPaper, #superpositionScissors,
+#entangledLizard, #spockWaveFunction {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
 
 .quantum-choices button:hover {
     background-color: #357ab7;
@@ -177,14 +173,14 @@ strong {
 }
 
 .choice-display {
-    flex-basis: 48%;
+    flex-basis: 40%;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: yellow;
 }
 
 .choice-display img {
-    width: 300px;
+    width: 250px;
     border: 1px solid #ccc;
     border-radius: 8px;
     margin: 10px 0;
@@ -192,6 +188,14 @@ strong {
     animation: bounce 0.8s infinite;
 }
 
+#quantum-scoreboard{
+    position: static;
+    background-color: black;
+    padding-top: 1em;
+    position: sticky;
+    bottom: 0;
+    z-index: 100;
+}
 .quantum-scoreboard {
     text-align: center;
     color: #e7e7e7;
@@ -199,11 +203,20 @@ strong {
 
 .quantum-scoreboard p {
     font-size: 20px;
+    padding-bottom: 0;
 }
 
 /* media query for screens 600px and down*/
 
 @media (max-width: 600px) {
+
+    #quantumRock,
+    #photonPaper,
+    #superpositionScissors,
+    #entangledLizard,
+    #spockWaveFunction {
+        font-size: 1em;
+    }
     .choice-display {
         flex-basis: 100%;
     }
@@ -230,5 +243,13 @@ strong {
 
     .quantum-choices button {
         margin-left: 35px;
+    }
+}
+
+/* media query for larger screens */
+@media (min-width: 768px) {
+    .quantum-scoreboard {
+        position: sticky;
+        bottom: 0;
     }
 }
