@@ -38,26 +38,30 @@ Quantum Duels follows the rules of Rock, Paper, Scissors, Lizard, Spock but with
 
 ### Validator Testing
 
-- HTML: No errors were returned when passing through the official [W3C validator](https://validator.w3.org/).
-- CSS: No errors were returned when passing through the official ( Jigsaw ) validator.
-- JS: No errors were returned when passing through the official [Jshint](https://jshint.com/) validator.
-- Accessibility: I confirmed that the colors and fonts chosen are easy to read and accessible by running it through lighthouse in devtools.
+- HTML
+-  Errors found when passed my code through the validator, were in the header element, some links werent properly placed, also the script closing tag was also missing, by placing the appropriate the tags and links to my favicon and style.css the errors were fixed. No errors were returned when passed the code again through the official [W3C validator](https://validator.w3.org/).
+- CSS:
+- Passing the code through the jigsaw validator, I realised that I did not place clossing semicolons to most of the style for some ids and classed, by placing the colons and passing the code throught the validator No errors were returned ( Jigsaw ).
+- JS: 
+- No errors were returned when passing through the official [Jshint](https://jshint.com/) validator.
+- Accessibility: 
+- I confirmed that the colors and fonts chosen are easy to read and accessible by running it through lighthouse in devtools.
 
 ![accessibility score](assets/images/lighthouse.png)
 
 ### Bugs
 
-- Upon testing the website and playing the gameit came to my notice that user could continue playing the game and winning without running out of rounds just selecting the Superposition Scissors choice. The computer could not counter the move regardless the number of times the user selects the Superposition Scissors. Which made the game pretty boring to the user. I figured it was how i wrote the code for the function makeAdaptiveComputerChoice
-- By introducing unpredictability: 30% chance to use adaptive choice and 70% chance to make a random choice. By using the Math.random() method, to return the counterMove() in the makeAdaptiveComputerChoice the bug was fixed and the computer could counter the users choices, making the game more competetive and interesting to the user.
+- Upon testing the website and playing the game it came to my notice that the user could continue playing the game and winning without running out of rounds just selecting the Superposition Scissors choice which could encourage cheating. The computer could not counter the move regardless the number of times the user selects the Superposition Scissors. Which made the game pretty boring to the user because the user could easily cheat and win as many times as they please. I figured it was how I wrote the code for the function makeAdaptiveComputerChoice
+- By introducing unpredictability: 30% chance to use adaptive choice and 70% chance to make a random choice. With the use of the Math.random() method, to return the counterMove() in the makeAdaptiveComputerChoice the bug was fixed and the computer could counter the users choices, making the game more challenging and interesting to the user.
 
 ## Deployment
 
 This website was deployed to Github pages. The steps to deploy are as follows:
 
 - In the GitHub repository, navigate to the Settings tab
-- Find pages then click on pages and find Build and Deployment
-- From the source section drop-down menu, select the Main Branch
-- Once the main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+- scroll down to find pages then click on pages and find Build and Deployment
+- From the source section click the drop-down menu, select the branch name Main,
+- Select save and then refresh page, scroll back down the refreshed page to get the deployed website link.
 
 The website can be accessed from the following link - []()
 
@@ -72,4 +76,3 @@ The website can be accessed from the following link - []()
 
 - The images for the player and computer choice was sourced from [Akshaybahadur](https://www.akshaybahadur.com/post/rock-paper-scissors-lizard-spock).
 - The background image was sourced from [Google](https://google.com/).
-
