@@ -39,13 +39,14 @@ Quantum Duels follows the rules of Rock, Paper, Scissors, Lizard, Spock but with
 ### Validator Testing
 
 - HTML
--  Errors found when passed my code through the validator, were in the header element, some links werent properly placed, also the script closing tag was also missing, by placing the appropriate the tags and links to my favicon and style.css the errors were fixed. No errors were returned when passed the code again through the official [W3C validator](https://validator.w3.org/).
+-  Errors found when passed my code through the validator, were in the header element, some links weren't properly placed, also the script closing tag was also missing, by placing the appropriate the tags and links to my favicon and style.css the errors were fixed. All buttons when clicked reacted and worked as expected, No errors were returned when passed the code again through the official [W3C validator](https://validator.w3.org/).
 - CSS:
 - Passing the code through the jigsaw validator, I realised that I did not place clossing semicolons to most of the style for some ids and classed, by placing the colons and passing the code throught the validator No errors were returned ( Jigsaw ).
 - JS: 
-- No errors were returned when passing through the official [Jshint](https://jshint.com/) validator.
+- When passing my code through the JS hint validator, I realsed that, most of the aurguments I passed lack closure, example the semicolons and some parentheses and also some of the camelCases weren't placed properly, by the correcting the errors and rechecking the code, no errors were returned also some buttons weren't responding, I realised I have made some erros with my event listeners, when i use getElementsByClassName, so I used querySelectAll and it worked. when I passed the code through the official [Jshint](https://jshint.com/) validator it retuened no errors.
 - Accessibility: 
 - I confirmed that the colors and fonts chosen are easy to read and accessible by running it through lighthouse in devtools.
+- Also the media queries i used worked when i checked the responsiveness on various devices especially mobile devices, I used [responsivedesignchecker](https://responsivedesignchecker.com/) and [AmIresponsive](https://ui.dev/amiresponsive?/)
 
 ![accessibility score](assets/images/lighthouse.png)
 
