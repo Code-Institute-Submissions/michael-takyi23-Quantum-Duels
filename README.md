@@ -24,15 +24,28 @@ The goal of the site is to provide the user with an interactive classic game.
 
 # Description
 
-Quantum Duels is a simple interactive game which follows the rules of Rock, Paper, Scissors, Lizard, Spock but with a quantum twist! Which gives the user the opportunity to test their skills and strategies against a quantum opponent (A.I).
+Quantum Duels is a simple interactive game which follows the rules of Rock, Paper, Scissors, Lizard, Spock but with a quantum twist! Which gives the user the opportunity to test their skills and strategies against a quantum opponent (computer).
 
 ## Features
+### Pattern matching functionality: 
+- The game has been scripted to create dynamic and responsive gameplay experiences that adapt to user actions, enhancing the users engagement and immersion by making the game feel more interactive and reactive.
+### A limited number of tries before the game is over: 
+- The user is given three rounds of tries before the game is over and the user can keep track of his perfomance and the number of tries remaining whenever they are defeated by the computer (quantum opponent).
+### A score tracking system: 
+- The game is programmed for the user to keep track of his progress whenever they prevail against the computer(quantum opponent) and also after they run out of tries they are alerted of their score before they choose to try again.
+### The ability to play against the computer: 
+- The game has been programmed for versus computer only (quantum opponent), which uses prediction to make a counter move against the user choices (quantum choices).
+### Curtain raiser:
+- A fade-in-out curtain raiser before the page loads to enhance the user experience and make the loading process more engaging.
 
 ## Features Left to Implement
 
-- Add sound effects for each quantum choice when clicked on. This will bring some liveliness to the game.
-- Implement a multiplayer mode for online battles. This will make the game more interactive and fun for users to play with other users and not only against the quantum opponent (A.I)
-- Leaderboard system to rank players based on their scores. This will make the game more competetive and interesting for the user as they'll be able to track their scores.
+### Add sound effects:
+- For each button (quantum choices) when clicked on. This will bring some liveliness to the game.
+### Implement a multiplayer mode for online battles:
+- This will enable the game to be more interactive and fun for users to be able to play with other users and not only against the quantum opponent (computer).
+### Leaderboard system: 
+- To rank players based on their perfomance (score). This will make the game more competitive and interesting for the user as they'll be able to track their progress and achievements.
 
 ## Technologies used
 
