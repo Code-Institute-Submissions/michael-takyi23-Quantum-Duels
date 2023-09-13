@@ -14,7 +14,7 @@ window.addEventListener("load", function () {
     
     // Hide the curtain raiser and show the game content
     const curtainRaiser = document.getElementById("curtain-raiser");
-    const gameContent = document.getElementById("game-content");
+    const gameContent = document.getElementById("container");
 
     curtainRaiser.style.display = "none";
     gameContent.style.display = "block";
