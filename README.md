@@ -20,19 +20,19 @@ The goal of the site is to provide the user with an interactive classic game.
 - I want to be able to see my score and progress during the gameplay.
 - I want to be able to play the game again when I run out of rounds and the game ends.
 
-**All users want to be able to access and comfortably view the website on mobile devices**
+**All users want to be able to access, interact and comfortably view the game on mobile devices**
 
 # Description
 
-Quantum Duels follows the rules of Rock, Paper, Scissors, Lizard, Spock but with a quantum twist! Which gives the users to test their skills and strategies against a quantum opponent (A.I).
+Quantum Duels is a simple interactive game which follows the rules of Rock, Paper, Scissors, Lizard, Spock but with a quantum twist! Which gives the user the opportunity to test their skills and strategies against a quantum opponent (A.I).
 
 ## Features
 
 ## Features Left to Implement
 
-- Add sound effects for each quantum choice when clicked on.
-- Implement a multiplayer mode for online battles.
-- Leaderboard system to rank players based on their scores.
+- Add sound effects for each quantum choice when clicked on. This will bring some liveliness to the game.
+- Implement a multiplayer mode for online battles. This will make the game more interactive and fun for users to play with other users and not only against the quantum opponent (A.I)
+- Leaderboard system to rank players based on their scores. This will make the game more competetive and interesting for the user as they'll be able to track their scores.
 
 ## Technologies used
 
@@ -48,7 +48,8 @@ Quantum Duels follows the rules of Rock, Paper, Scissors, Lizard, Spock but with
 - I confirmed that the colors and fonts chosen are easy to read and accessible by running it through lighthouse in devtools.
 - Also the media queries i used worked when i checked the responsiveness on various devices especially mobile devices, I used [responsivedesignchecker](https://responsivedesignchecker.com/) and [AmIresponsive](https://ui.dev/amiresponsive?/)
 
-![accessibility score](assets/images/lighthouse.png)
+![accessibility score on mobile devices](assets/images/lighthouse.png)
+![accessibility score on desktop and other bigger devices]()
 
 ### Bugs
 
