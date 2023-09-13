@@ -253,9 +253,15 @@ strong {
         flex-basis: 100%;
     }
 
-    .begin {
-        margin-left: 35px;
-    }
+   #rules-container {
+       max-width: 400px;
+       margin: 0 auto;
+       background-color: rgba(0, 0, 0, 0.4);
+       padding-bottom: 1em;
+       margin-top: auto;
+       border-radius: 10px;
+       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+   }
 
     #rules p{
         margin-left: 10px;
