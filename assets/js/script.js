@@ -9,6 +9,17 @@ let playerHistory = {
     spockWaveFunction: 0
 };
 
+// Adding event listener to curtain raiser
+window.addEventListener("load", function () {
+    
+    // Hide the curtain raiser and show the game content
+    const curtainRaiser = document.getElementById("curtain-raiser");
+    const gameContent = document.getElementById("game-content");
+
+    curtainRaiser.style.display = "none";
+    gameContent.style.display = "block";
+});
+
 // Adding event listener to all buttons
 document.addEventListener("DOMContentLoaded", function() {
     const buttons = document.querySelectorAll(".data-choice");
