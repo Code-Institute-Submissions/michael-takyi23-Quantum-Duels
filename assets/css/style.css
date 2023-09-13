@@ -254,7 +254,7 @@ strong {
     }
 
    #rules-container {
-       max-width: 400px;
+       width: 310px;
        margin: 0 auto;
        background-color: rgba(0, 0, 0, 0.4);
        padding-bottom: 1em;
@@ -272,7 +272,7 @@ strong {
     }
 
     .choice-display img {
-        width: 250px;
+        width: 200px;
     }
 
     .quantum-choices h2 {
