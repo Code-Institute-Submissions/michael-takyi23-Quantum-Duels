@@ -66,6 +66,8 @@ header {
     color: yellow;
     font-size: 40px;
     letter-spacing: 2px;
+
+    animation: breathe 2s infinite;
 }
 
 header p {
@@ -87,12 +89,6 @@ header p {
         transform: scale(1.4);
         opacity: 0.6;
     }
-}
-
-#RPSLS {
-    color: red;
-
-    animation: breathe 2s infinite;
 }
 
 #rules-container {
