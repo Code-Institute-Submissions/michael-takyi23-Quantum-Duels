@@ -30,19 +30,26 @@ Quantum Duels is a simple interactive game which follows the rules of Rock, Pape
 
 ### Pattern matching functionality
 
-- The game has been scripted to create dynamic and responsive gameplay experiences that adapt to user actions, enhancing the users engagement and immersion by making the game feel more interactive and reactive.
+- The game has been scripted to create dynamic and responsive gameplay experiences that adapt to user actions for example button clicks, enhancing the users engagement and immersion by making the game feel more interactive and reactive. 
+[button clicks for interactivity]()
 
 ### A limited number of tries before the game is over
 
 - The user is given three rounds of tries before the game is over and the user can keep track of his perfomance and the number of tries remaining whenever they are defeated by the computer (quantum opponent).
 
+[Limited number of tries "three"]()
+
 ### A score tracking system
 
 - The game is programmed for the user to keep track of his progress whenever they prevail against the computer(quantum opponent) and also after they run out of tries they are alerted of their score before they choose to try again.
 
+[Duel outcome to track perfomance and view score]()
+
 ### The ability to play against the computer
 
 - The game has been programmed for versus computer only (quantum opponent), which uses prediction to make a counter move against the user choices (quantum choices).
+
+[choice display section for both user choice and computer choice]()
 
 ### Curtain raiser
 
