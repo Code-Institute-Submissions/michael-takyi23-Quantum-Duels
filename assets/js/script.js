@@ -20,6 +20,7 @@ window.addEventListener("load", function () {
     gameContent.style.display = "block";
 });
 
+// Adding event listeners to the button elements
 document.addEventListener("DOMContentLoaded", function () {
     const buttons = document.getElementsByTagName("button");
 
