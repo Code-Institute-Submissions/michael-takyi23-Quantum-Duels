@@ -14,7 +14,10 @@ The goal of the site is to provide the user with an interactive classic game.
 
 **As a user**
 
-- I want to easily understand the rules of the game.
+- I want to easily understand the rules of the game. 
+  
+ ![Game rules section explaining the rules of the game](assets/images/game-rules.png)
+
 - I am interested in knowing my scores and rounds I have left.
 - I want to be able to easily interact with the game choices when I click on the choices available.
 - I want to be able to see my score and progress during the gameplay.
@@ -31,25 +34,26 @@ Quantum Duels is a simple interactive game which follows the rules of Rock, Pape
 ### Pattern matching functionality
 
 - The game has been scripted to create dynamic and responsive gameplay experiences that adapt to user actions for example button clicks, enhancing the users engagement and immersion by making the game feel more interactive and reactive. 
-[button clicks for interactivity]()
+
+![button clicks for interactivity](assets/images/button-clicks.png)
 
 ### A limited number of tries before the game is over
 
 - The user is given three rounds of tries before the game is over and the user can keep track of his perfomance and the number of tries remaining whenever they are defeated by the computer (quantum opponent).
 
-[Limited number of tries "three"]()
+![Limited number of tries "three"](assets/images/duel-outcome-rounds.png)
 
 ### A score tracking system
 
 - The game is programmed for the user to keep track of his progress whenever they prevail against the computer(quantum opponent) and also after they run out of tries they are alerted of their score before they choose to try again.
 
-[Duel outcome to track perfomance and view score]()
+![Duel outcome to track perfomance and view score](assets/images/track-perfomance.png)
 
 ### The ability to play against the computer
 
 - The game has been programmed for versus computer only (quantum opponent), which uses prediction to make a counter move against the user choices (quantum choices).
 
-[choice display section for both user choice and computer choice]()
+![choice display section for both user choice and computer choice](assets/images/choice-display.png)
 
 ### Curtain raiser
 
@@ -59,9 +63,15 @@ Quantum Duels is a simple interactive game which follows the rules of Rock, Pape
 
 Balsamiq was used to create the wireframes during the design process.
 
-- [Desktop view](assets/images/desktop-view.png)
-- [Ipad view](assets/images/ipadview.png)
-- [Mobile phone view](assets/images/mobilephoneview.png)
+- Desktop view 
+![Desktop view](assets/images/desktop-view.png)
+
+- Ipad view 
+![Ipad view](assets/images/ipadview.png)
+
+- Smart phones view
+  
+  ![Mobile phone view](assets/images/mobilephoneview.png)
 
 ## Features Left to Implement
 
@@ -97,7 +107,8 @@ Balsamiq was used to create the wireframes during the design process.
 ### Bugs
 
 - Upon testing the website and playing the game it came to my notice that the user could continue playing the game and winning without running out of rounds just selecting the Superposition Scissors choice which could encourage cheating. The computer could not counter the move regardless the number of times the user selects the Superposition Scissors. Which made the game pretty boring to the user because the user could easily cheat and win as many times as they please. I figured it was how I wrote the code for the function makeAdaptiveComputerChoice
-- By introducing unpredictability: 30% chance to use adaptive choice and 70% chance to make a random choice. With the use of the Math.random() method, to return the counterMove() in the makeAdaptiveComputerChoice the bug was fixed and the computer could counter the users choices, making the game more challenging and interesting to the user.
+
+- By introducing unpredictability: 30% chance to use adaptive choice and 70% chance to make a random choice. With the use of the Math.random() method, to return the counterMove() in the makeAdaptiveComputerChoice function the bug was fixed and the computer could counter the users choices, making the game more challenging and interesting to the user.
 
 ## Deployment
 
