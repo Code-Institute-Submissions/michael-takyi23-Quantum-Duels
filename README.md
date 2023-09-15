@@ -146,4 +146,5 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 ### Acknowledgements
 
 - My Mentor for continuous helpful feedback.
-- Thanks to CI Love Math walkthrough project, gave me the idea the build the structure for the various functions in my script.js
+
+- Thanks to CI Love Math walkthrough project, gave me the idea the build the structure for the various functions in my script.js and also creating my event listener for the button clicks.
