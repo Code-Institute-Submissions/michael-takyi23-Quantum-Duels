@@ -20,15 +20,14 @@ window.addEventListener("load", function () {
     gameContent.style.display = "block";
 });
 
-// Adding event listener to all buttons
-document.addEventListener("DOMContentLoaded", function() {
-    const buttons = document.querySelectorAll(".data-choice");
+document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.getElementsByTagName("button");
 
-    buttons.forEach(button => {
-        button.addEventListener("click", function() {
-            playGame(button.id);
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener("click", function () {
+            playGame(buttons[i].id);
         });
-    });
+    }
 });
 
 // Defining the main game functions
