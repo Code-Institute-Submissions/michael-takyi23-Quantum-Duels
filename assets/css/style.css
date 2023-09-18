@@ -84,12 +84,10 @@ header p {
     0%,
     100% {
         transform: scale(1);
-        opacity: 2;
     }
 
     50% {
         transform: scale(1.4);
-        opacity: 0.6;
     }
 }
 
@@ -133,7 +131,6 @@ strong {
 #rules {
     background-color: aqua;
     border-radius: 5px;
-
 }
 
 #rules h2 {
