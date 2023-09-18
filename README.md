@@ -99,7 +99,7 @@ Balsamiq was used to create the wireframes during the design process.
   
 - JS:
 - When passing my code through the JS hint validator, I realsed that, most of the aurguments I passed lack closure, example the semicolons and some parentheses and also some of the camelCases weren't placed properly, by the correcting the errors and rechecking the code, no errors were returned also some buttons weren't responding, I realised I have made some erros with my event listeners, I realised i used get Elements by Class name instead of Tag names for my buttons and also I forgot to put them in an array for example [i].
- afte fixing them and using the right methods I passed the code again through the official [Jshint](https://jshint.com/) validator it retuened no errors.
+ after fixing them and using the right methods I passed the code again through the official [Jshint](https://jshint.com/) validator it retuened no errors.
  
 - Accessibility:
 - I confirmed that the colors and fonts chosen are easy to read and accessible by running it through lighthouse in devtools.
