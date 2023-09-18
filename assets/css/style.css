@@ -66,6 +66,8 @@ header {
     color: yellow;
     font-size: 40px;
     letter-spacing: 2px;
+    max-width: 50vw;
+    margin: 20px auto;
 
     animation: breathe 2s infinite;
 }
@@ -118,6 +120,14 @@ ul {
 
 strong {
     color: yellow;
+}
+
+#rules ul {
+    display: none;
+}
+
+#rules:hover>ul {
+    display: block;
 }
 
 #rules {
@@ -237,6 +247,7 @@ strong {
     font-size: 20px;
     padding-bottom: 0;
 }
+
 
 /* media query for screens 600px and down*/
 
