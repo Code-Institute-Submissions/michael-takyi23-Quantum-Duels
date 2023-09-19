@@ -20,6 +20,17 @@ window.addEventListener("load", function () {
     gameContent.style.display = "block";
 });
 
+//Adding event listener to make game rules accessible on mobile devices
+document.addEventListener('DOMContentLoaded', function () {
+        const gameRules = document.getElementById('rules').getElementsByTagName('h2')[0];
+        const rulesList = document.getElementById('rules').getElementsByTagName('ul')[0];
+
+        gameRules.addEventListener('click', function () {
+            rulesList.style.display = (rulesList.style.display === 'block') ? 'none' : 'block';
+        });
+});
+
+
 // Adding event listeners to the button elements
 document.addEventListener("DOMContentLoaded", function () {
     const buttons = document.getElementsByTagName("button");
