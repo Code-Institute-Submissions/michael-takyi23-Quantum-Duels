@@ -6,7 +6,7 @@ Welcome to Quantum Duels, a modern take on the classic Rock, Paper, Scissors gam
 
 ## Purpose
 
-The goal of the site is to provide the user with an interactive classic game.
+The goal of the site is to provide the user with an interactive classic online game.
 
 ## UX Design
 
@@ -27,7 +27,7 @@ The goal of the site is to provide the user with an interactive classic game.
 
 # Description
 
-Quantum Duels is a simple interactive game which follows the rules of Rock, Paper, Scissors, Lizard, Spock but with a quantum twist! Which gives the user the opportunity to test their skills and strategies against a quantum opponent (computer).
+Quantum Duels is a simple interactive online game which follows the rules of Rock, Paper, Scissors, Lizard, Spock but with a quantum twist! Which gives the user the opportunity to test their skills and strategies against a quantum opponent (computer). The game begins with a simple but effective curtain raiser before the game loads. The user can either hover over the game rules to display the rules of the game on a desktops and bigger screens, or click on the game rules on smaller screens or smarter devices to display the game rules before delving into the quantum realm to test their skills and strategy against the computer.
 
 ## Features
 
@@ -39,7 +39,7 @@ Quantum Duels is a simple interactive game which follows the rules of Rock, Pape
 
 ### A limited number of tries before the game is over
 
-- The user is given three rounds of tries before the game is over and the user can keep track of his perfomance and the number of tries remaining whenever they are defeated by the computer (quantum opponent).
+- The user is given three rounds of tries before the game is over and the user can keep track of his performance and the number of tries remaining whenever they are defeated by the computer (quantum opponent).
 
 ![Limited number of tries "three"](assets/images/duel-outcome-rounds.png)
 
@@ -47,7 +47,7 @@ Quantum Duels is a simple interactive game which follows the rules of Rock, Pape
 
 - The game is programmed for the user to keep track of his progress whenever they prevail against the computer(quantum opponent) and also after they run out of tries they are alerted of their score before they choose to try again.
 
-![Duel outcome to track perfomance and view score](assets/images/track-perfomance.png)
+![Duel outcome to track performance and view score](assets/images/track-perfomance.png)
 
 ### The ability to play against the computer
 
@@ -66,8 +66,8 @@ Balsamiq was used to create the wireframes during the design process.
 - Desktop view 
 ![Desktop view](assets/images/desktop-view.png)
 
-- Ipad view 
-![Ipad view](assets/images/ipadview.png)
+- ipad view 
+![ipad view](assets/images/ipadview.png)
 
 - Smart phones view
   
@@ -85,7 +85,7 @@ Balsamiq was used to create the wireframes during the design process.
 
 ### Leaderboard system
 
-- To rank players based on their perfomance (score). This will make the game more competitive and interesting for the user as they'll be able to track their progress and achievements.
+- To rank players based on their performance (score). This will make the game more competitive and interesting for the user as they'll be able to track their progress and achievements.
 
 ## Technologies used
 
@@ -95,11 +95,11 @@ Balsamiq was used to create the wireframes during the design process.
 - Errors found when passed my code through the validator, were in the header element, some links weren't properly placed, also the script closing tag was also missing, by placing the appropriate the tags and links to my favicon and style.css the errors were fixed. All buttons when clicked reacted and worked as expected, No errors were returned when passed the code again through the official [W3C validator](https://validator.w3.org/).
   
 - CSS:
-- Passing the code through the jigsaw validator, I realised that I did not place clossing semicolons to most of the style for some ids and classed, by placing the colons and passing the code throught the validator No errors were returned ( Jigsaw ).
+- Passing the code through the jigsaw validator, I realised that I did not place closing semicolons to most of the style for some ids and classed, by placing the colons and passing the code through the validator No errors were returned ( Jigsaw ).
   
 - JS:
-- When passing my code through the JS hint validator, I realsed that, most of the aurguments I passed lack closure, example the semicolons and some parentheses and also some of the camelCases weren't placed properly, by the correcting the errors and rechecking the code, no errors were returned also some buttons weren't responding, I realised I have made some erros with my event listeners, I realised i used get Elements by Class name instead of Tag names for my buttons and also I forgot to put them in an array for example [i].
- after fixing them and using the right methods I passed the code again through the official [Jshint](https://jshint.com/) validator it retuened no errors.
+- When passing my code through the JS hint validator, I realised that, most of the arguments I passed lack closure, example the semicolons and some parentheses and also some of the camelCases weren't placed properly, by the correcting the errors and rechecking the code, no errors were returned also some buttons weren't responding, I realised I have made some errors with my event listeners, I realised i used get Elements by Class name instead of Tag names for my buttons and also I forgot to put them in an array for example [i].
+ after fixing them and using the right methods I passed the code again through the official [Jshint](https://jshint.com/) validator it returned no errors.
  
 - Accessibility:
 - I confirmed that the colors and fonts chosen are easy to read and accessible by running it through lighthouse in devtools.
@@ -117,6 +117,8 @@ Lighthouse test on accessibility through the Dev-tools on google chrome for both
 - Upon testing the website and playing the game it came to my notice that the user could continue playing the game and winning without running out of rounds just selecting the Superposition Scissors choice which could encourage cheating. The computer could not counter the move regardless the number of times the user selects the Superposition Scissors. Which made the game pretty boring to the user because the user could easily cheat and win as many times as they please. I figured it was how I wrote the code for the function makeAdaptiveComputerChoice
 
 - By introducing unpredictability: 30% chance to use adaptive choice and 70% chance to make a random choice. With the use of the Math.random() method, to return the counterMove() in the makeAdaptiveComputerChoice function the bug was fixed and the computer could counter the users choices, making the game more challenging and interesting to the user.
+
+- On desktops and smaller devices, the content of the page was not stable, I figured when i slide the content to the left there a appeared a big gap on the side of the page therefore shitting the contents to the right. I figured that some of my H1 and H2 elements were too big and shifted the other elements making them shift from their original position. by adding max.width of 50vw and margin of 20px auto; to my H1 element the bug was solved.
 
 ## Deployment
 
@@ -156,3 +158,5 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 - My Mentor for continuous helpful feedback.
 
 - Thanks to CI Love Math walkthrough project, gave me the idea the build the structure for the various functions in my script.js and also creating my event listener for the button clicks.
+
+- Thanks to CI tutor support for swift and effective response when I faced issues with my workspace on 'codeanywhere'.
