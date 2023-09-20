@@ -23,9 +23,11 @@
   </head>
 
   <body>
-    <div id = "curtain-raiser">
-        <div class="curtain"></div>
-    </div>
+    <section>
+       <div id = "curtain-raiser">
+           <div class="curtain"></div>
+       </div>
+   </section>
 
         <header>
             <h1 id="logo">Quantum Duels</h1>
@@ -33,8 +35,8 @@
         </header>
     
         <!-- Rules Section -->
+    <section id="rules">
         <div id="rules-container">
-        <section id="rules">
             <h2>Game Rules</h2>
             <p>
                 Quantum Duels follows the rules of Rock, Paper, Scissors, Lizard, Spock with a quantum twist: </p>
@@ -46,13 +48,15 @@
                 <li>Spock Wave-Function smashes Superposition Scissors and vaporizes Quantum Rock</li>
             </ul>
             <i class="fa-brands fa-battle-net fa-spin" style="color: red; font-size: 30px;"></i>
-        </section>
-</div>
+        </div>
+    </section>
+
     
 <!-- main game area-->
-<div id="container">
 
-        <section class="quantum-choices">
+     <section class="quantum-choices">
+        <div id="container">
+
 
             <h2>Quantum Choices</h2>
             <button class= "data-choice" id= "quantumRock" aria-label="Choose Quantum Rock">Quantum Rock <i class="fa-solid fa-hand-back-fist" style="color: #f20232; font-size: 20px;"></i></button>
@@ -65,7 +69,7 @@
 
         </section>
 
-        <section id="duel-results">
+    <section id="duel-results">
 
             <div class="choice-display">
                 <h3 id="playerChoice"><strong>Your Quantum Choice:</strong></h3>
@@ -75,9 +79,9 @@
                 <h3 id="ComputerChoice"><strong>Opponent's Quantum State:</strong></h3>
                 <img id="computerChoiceImage" src="assets/images/rpsls.png" alt="Computer's choice">
             </div>
+        </div>
+    </section>
 
-        </section>
-</div>
         <!-- Quantum Scoreboard Area -->
 <div id="quantum-scoreboard">
         <footer class="quantum-scoreboard">
