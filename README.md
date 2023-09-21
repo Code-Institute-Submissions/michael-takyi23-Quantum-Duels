@@ -27,7 +27,7 @@ The goal of the site is to provide the user with an interactive classic online g
 
 # Description
 
-Quantum Duels is a simple interactive online game which follows the rules of Rock, Paper, Scissors, Lizard, Spock but with a quantum twist! Which gives the user the opportunity to test their skills and strategies against a quantum opponent (computer). The game begins with a simple but effective curtain raiser before the game loads. The user can either hover over the game rules to display the rules of the game on a desktops and bigger screens, or click on the game rules on smaller screens or smarter devices to display the game rules before delving into the quantum realm to test their skills and strategy against the computer.
+Quantum Duels is a simple interactive online game which follows the rules of Rock, Paper, Scissors, Lizard, Spock but with a quantum twist! Which gives the user the opportunity to test their skills and strategies against a quantum opponent (computer).
 
 ## Features
 
