@@ -92,15 +92,19 @@ Balsamiq was used to create the wireframes during the design process.
 
 - HTML
 - Errors found when passed my code through the validator, were in the header element, some links weren't properly placed, also the script closing tag was also missing, by placing the appropriate tags and links to my favicon and style.css the errors were fixed. All buttons when clicked reacted and worked as expected, No errors were returned when passed the code again through the official [W3C validator](https://validator.w3.org/).
-  ![W3C test for HTML()
+  
+  ![W3C test for HTML](assets/images/html-validator.png)
   
 - CSS:
-- Passing the code through the jigsaw validator, I realised that I did not place closing semicolons to most of the style for some ids and classed, by placing the colons and passing the code through the validator No errors were returned. [W3C test for CSS]().
+- Passing the code through the jigsaw validator, I realised that I did not place closing semicolons to most of the style for some ids and classed, by placing the colons and passing the code through the validator No errors were returned. 
+  
+  ![W3C test for CSS](assets/images/CSS-validator.png).
   
 - JS:
 - When passing my code through the JS hint validator, I realised that, most of the arguments I passed lack closure, example the semicolons and some parentheses and also some of the camelCases weren't placed properly, by the correcting the errors and rechecking the code, no errors were returned also some buttons weren't responding, I realised I have made some errors with my event listeners, I realised i used get Elements by Class name instead of Tag names for my buttons and also I forgot to put them in an array for example [i].
 after fixing them and using the right methods I passed the code again through the official  validator it showed one warning but actually everything works fine. the event listeners and the computer adaptive functions when the user clicks to choose a choice against the computer. [Jshint](https://jshint.com/) 
-![jshint tester]()
+
+![jshint tester](assets/images/JShint.png)
  
 - Accessibility:
 - I confirmed that the colors and fonts chosen are easy to read and accessible by running it through lighthouse in devtools.
