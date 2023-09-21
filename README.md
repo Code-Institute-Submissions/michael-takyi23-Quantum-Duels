@@ -14,10 +14,7 @@ The goal of the site is to provide the user with an interactive classic online g
 
 **As a user**
 
-- I want to easily understand the rules of the game. 
-  
- ![Game rules section explaining the rules of the game](assets/images/game-rules.png)
-
+- I want to easily understand the rules of the game.
 - I am interested in knowing my scores and rounds I have left.
 - I want to be able to easily interact with the game choices when I click on the choices available.
 - I want to be able to see my score and progress during the gameplay.
