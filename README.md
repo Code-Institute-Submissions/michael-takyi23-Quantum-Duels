@@ -6,7 +6,7 @@ Welcome to Quantum Duels, a modern take on the classic Rock, Paper, Scissors gam
 
 ## Purpose
 
-The goal of the site is to provide the user with an interactive classic online game. Quantum Duels follows the rules of Rock, Paper, Scissors, Lizard, Spock but with a quantum twist! Which gives the user the opportunity to test their skills and strategies against a quantum opponent (computer).
+The goal of the site is to provide the user with an interactive classic online game that has elements of chance. Quantum Duels follows the rules of Rock, Paper, Scissors, Lizard, Spock but with a quantum twist! Which provides a challenging game with increasing level of difficulty for the user to test their skills and strategies against a quantum opponent (computer).
 
 ## UX Design
 
