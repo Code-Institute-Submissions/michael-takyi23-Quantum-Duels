@@ -12,7 +12,7 @@ let playerHistory = {
 // Defining a function to handle all event listeners
 function SetUpEventListeners() {
 
-// Adding event listener to curtain raiser
+// event listener for curtain raiser
 window.addEventListener("load", function () {
     
     // Hide the curtain raiser and show the game content
@@ -23,7 +23,7 @@ window.addEventListener("load", function () {
     gameContent.style.display = "block";
 });
 
-//Adding event listener to make game rules accessible on smaller devices
+// Event listener to make game rules accessible on smaller devices
 document.addEventListener('DOMContentLoaded', function () {
         const gameRules = document.getElementById('rules').getElementsByTagName('h2')[0];
         const rulesList = document.getElementById('rules').getElementsByTagName('ul')[0];
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
-// Adding event listeners to the button elements
+// Event listeners to the button elements
 document.addEventListener("DOMContentLoaded", function () {
     const buttons = document.getElementsByTagName("button");
 
