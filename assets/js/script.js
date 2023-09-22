@@ -84,7 +84,7 @@ function playGame(choice) {
      
     // check if the game has ended
     if (rounds === 0) {
-        alert('Quantum Duel Ends! Try again! Your quantum points are: ' + score);
+        alert('Awwwwww! Game Over! Try again! Your quantum points are: ' + score);
         resetGame();
     }
 }
@@ -93,7 +93,7 @@ function updatePlayerHistory(choice) {
     playerHistory[choice]++;
 }
 
-// This makes the computer Adapt to the players choices and predict to counter Move:
+// Implementing Adaptive computer choice to predict to counter Move:
 function makeAdaptiveComputerChoice() {
     const choices = Object.keys(playerHistory);
     let prediction = choices[0];
