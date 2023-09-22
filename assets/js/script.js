@@ -9,6 +9,9 @@ let playerHistory = {
     spockWaveFunction: 0
 };
 
+// Defining a function to handle all event listeners
+function SetUpEventListeners() {
+
 // Adding event listener to curtain raiser
 window.addEventListener("load", function () {
     
@@ -31,8 +34,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
-
-
 // Adding event listeners to the button elements
 document.addEventListener("DOMContentLoaded", function () {
     const buttons = document.getElementsByTagName("button");
@@ -43,6 +44,9 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+}
+
+SetUpEventListeners();
 
 // Defining the main game functions
 function playGame(choice) {
