@@ -9,26 +9,34 @@ let playerHistory = {
     spockWaveFunction: 0
 };
 
+// Declaring variables for DOM elements
+const playerChoice = document.getElementById('playerChoice');
+const computerChoice = document.getElementById('ComputerChoice');
+const duelOutcome= document.getElementById('duelOutcome');
+const playerChoiceImage = document.getElementById('playerChoiceImage');
+const computerChoiceImage = document.getElementById('computerChoiceImage');
+const quantumPoints = document.getElementById('quantumPoints');
+const duelRounds = document.getElementById('duelRounds');
+const curtainRaiser = document.getElementById('curtain-raiser');
+const gameContent = document.getElementById('container');
+const gameRules = document.getElementById('rules');
+const gameRulesHeader = gameRules.getElementsByTagName('h2')[0];
+const rulesList = gameRules.getElementsByTagName('ul')[0];
+const buttons = document.getElementsByTagName("button");
+
 // Defining a function to handle all event listeners
 function SetUpEventListeners() {
-
-// event listener for curtain raiser
+ // event listener for curtain raiser
 window.addEventListener("load", function () {
-    
-    // Hide the curtain raiser and show the game content
-    const curtainRaiser = document.getElementById("curtain-raiser");
-    const gameContent = document.getElementById("container");
-
+     // Hide the curtain raiser and show the game content
     curtainRaiser.style.display = "none";
     gameContent.style.display = "block";
 });
 
 // Event listener to make game rules accessible on smaller devices
 document.addEventListener('DOMContentLoaded', function () {
-        const gameRules = document.getElementById('rules').getElementsByTagName('h2')[0];
-        const rulesList = document.getElementById('rules').getElementsByTagName('ul')[0];
-        
-        if (window.innerWidth <= 600) {
+       
+    if (window.innerWidth <= 600) {
         gameRules.addEventListener('click', function () {
             rulesList.style.display = (rulesList.style.display === 'block') ? 'none' : 'block';
         });
@@ -36,9 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 // Event listeners to the button elements
 document.addEventListener("DOMContentLoaded", function () {
-    const buttons = document.getElementsByTagName("button");
-
-    for (let i = 0; i < buttons.length; i++) {
+     for (let i = 0; i < buttons.length; i++) {
         buttons[i].addEventListener("click", function () {
             playGame(buttons[i].id);
         });
@@ -50,26 +56,33 @@ SetUpEventListeners();
 
 // Defining the main game functions
 function playGame(choice) {
+    // update players choice history
     updatePlayerHistory(choice);
+    // calculate computers adaptive choice
     const computerChoice = makeAdaptiveComputerChoice();
+    // determine game results
     const result = determineWinner(choice, computerChoice);
 
-    document.getElementById('playerChoice').textContent = "Your Choice: " + choice;
-    document.getElementById('ComputerChoice').textContent = "Opponent's Choice: " + computerChoice;
-    document.getElementById('duelOutcome').textContent = result;
-
-    document.getElementById('playerChoiceImage').src = `assets/images/${choice}.jpg`;
-    document.getElementById('computerChoiceImage').src = `assets/images/${computerChoice}.jpg`;
-
+    // update DOM elements with the game result
+    playerChoice.textContent = "Your Choice: " + choice;
+    ComputerChoice.textContent = "Opponent's Choice: " + computerChoice;
+    duelOutcome.textContent = result;
+   
+    // update player and computers choice images
+    playerChoiceImage.src = `assets/images/${choice}.jpg`;
+    computerChoiceImage.src = `assets/images/${computerChoice}.jpg`;
+   
+    // update score rounds
     if (result === 'You Prevailed!') {
         score++;
     } else if (result === 'Quantum Defeat!') {
         rounds--;
     }
 
-    document.getElementById('quantumPoints').textContent = score;
-    document.getElementById('duelRounds').textContent = rounds;
-
+    quantumPoints.textContent = score;
+    duelRounds.textContent = rounds;
+     
+    // check if the game has ended
     if (rounds === 0) {
         alert('Quantum Duel Ends! Try again! Your quantum points are: ' + score);
         resetGame();
@@ -119,12 +132,13 @@ function counterMove(prediction) {
 
 // defining the outcome of the game
 function determineWinner(playerChoice, computerChoice) {
-    let outcomeElement = document.getElementById('duelOutcome');
+    let outcomeElement = duelOutcome;
 
     if (playerChoice === computerChoice) {
         outcomeElement.style.color = "yellow"; 
         return 'Quantum Stalemate!';
     }
+    // Define winning combinations
     if ((playerChoice === 'quantumRock' && (computerChoice === 'superpositionScissors' || computerChoice === 'entangledLizard')) ||
         (playerChoice === 'photonPaper' && (computerChoice === 'quantumRock' || computerChoice === 'spockWaveFunction')) ||
         (playerChoice === 'superpositionScissors' && (computerChoice === 'photonPaper' || computerChoice === 'entangledLizard')) ||
