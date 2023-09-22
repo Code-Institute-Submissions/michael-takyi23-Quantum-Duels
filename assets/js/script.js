@@ -20,7 +20,6 @@ const duelRounds = document.getElementById('duelRounds');
 const curtainRaiser = document.getElementById('curtain-raiser');
 const gameContent = document.getElementById('container');
 const gameRules = document.getElementById('rules');
-const gameRulesHeader = gameRules.getElementsByTagName('h2')[0];
 const rulesList = gameRules.getElementsByTagName('ul')[0];
 const buttons = document.getElementsByTagName("button");
 
