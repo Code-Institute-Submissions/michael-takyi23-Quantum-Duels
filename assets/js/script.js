@@ -65,7 +65,7 @@ function playGame(choice) {
 
     // update DOM elements with the game result
     playerChoice.textContent = "Your Choice: " + choice;
-    ComputerChoice.textContent = "Opponent's Choice: " + computerChoice;
+    computerChoice.textContent = "Opponent's Choice: " + computerChoice;
     duelOutcome.textContent = result;
    
     // update player and computers choice images
